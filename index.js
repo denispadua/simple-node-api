@@ -7,4 +7,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => { console.log('Our App Is Up And Running!'); });
+app.listen(process.env.PORT || 5000, () => { console.log('Our App Is Up And Running!'); });
 module.exports = app
